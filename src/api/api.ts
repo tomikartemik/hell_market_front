@@ -1,7 +1,7 @@
 import axios from "axios";
 import {IAd, IPurchaseRequest, IUser, TAdListResponse, TCategoriesResponse} from "./api.types.ts";
 
-export const baseUrl = 'https://api.bigbolts.ru/'
+export const baseUrl = 'https://api.hellmarket.shop/'
 
 class Api {
     // Users
