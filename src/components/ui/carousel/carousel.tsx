@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import clsx from 'clsx';
-import styles from './Carousel.module.css';
+import styles from './carousel.module.css';
 import {Swiper, SwiperSlide} from "swiper/react";
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
