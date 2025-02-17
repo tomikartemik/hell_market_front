@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SESSION_NAME="shp_front"
+SESSION_NAME="shop_front"
 REPO_DIR="$HOME/hell_market_front"
 GIT_REPO_URL="https://github.com/tomikartemik/hell_market_front.git"
 
@@ -25,4 +25,4 @@ cd $REPO_DIR && git pull origin main
 cd cmd
 
 tmux new-session -d -s $SESSION_NAME
-tmux_send "go run main.go"
+tmux_send "npm run deploy"
