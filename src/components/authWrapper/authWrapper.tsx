@@ -28,7 +28,7 @@ export const AuthWrapper: FC<PropsWithChildren> = ({children}) => {
     const {initData} = useLaunchParams()
 
     const {data, isLoading} = useGetUserById(initData?.user?.id ?? 0)
-    // const {data, isLoading} = useGetUserById( 690792745)
+    // const {data, isLoading} = useGetUserById( 663184248)
 
     return (
         <AuthContext.Provider value={{
