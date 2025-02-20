@@ -23,16 +23,21 @@ export const ProfilePage = () => {
 
     return (
         <div className={styles.root}>
-            <ProfileHeader
-                type={'personal'}
-                user={user.user}
-            />
-            <ProfileNavbar context={context} setContext={setContext}/>
-            <Content
-                hideFeed
-                data={data}
-                isLoading={user.isLoading}
-            />
+            <div className={styles.layout}>
+                <ProfileHeader
+                    type={'personal'}
+                    user={user.user}
+                />
+                <ProfileNavbar context={context} setContext={setContext}/>
+                <Content
+                    hideFeed
+                    data={data}
+                    isLoading={user.isLoading}
+                />
+            </div>
+            <div className={styles.xouston}>
+                Created by <a href={'https://xouston.com'} target={'_blank'}>Xouston</a>
+            </div>
         </div>
     )
 }

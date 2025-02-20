@@ -58,7 +58,7 @@ export const MainHeader = () => {
                             setIsSearchActive(true)
                         }}
                         onClick={() => debouncedSearchData.length && setIsSearchActive(true)}
-                        onBlur={() => setTimeout(() => setIsSearchActive(false), 110)}
+                        onBlur={() => setTimeout(() => setIsSearchActive(false), 230)}
                     />
                     <img
                         src={searchIcon}

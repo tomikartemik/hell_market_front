@@ -5,11 +5,8 @@ import {Content} from "../../components/content/content.tsx";
 import {useGetAdList} from "../../api/queries/useGetAdList.tsx";
 import {useGetCategoriesQuery} from "../../api/queries/useGetCategoriesQuery.tsx";
 import {useEffect, useMemo, useState} from "react";
-// import {useLaunchParams} from "@telegram-apps/sdk-react";
 
 export const MainPage = () => {
-    // const {initData} = useLaunchParams()
-
     const {data: categoriesData} = useGetCategoriesQuery()
 
     const categories = useMemo(() => {
@@ -35,9 +32,14 @@ export const MainPage = () => {
 
     return (
         <div className={styles.root}>
-            <MainHeader />
-            <Navbar categories={categories} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
-            <Content data={data?.data} isLoading={isLoading}/>
+            <div className={styles.layout}>
+                <MainHeader />
+                <Navbar categories={categories} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
+                <Content data={data?.data} isLoading={isLoading}/>
+            </div>
+            <div className={styles.xouston}>
+                Created by <a href={'https://xouston.com'} target={'_blank'}>Xouston</a>
+            </div>
         </div>
     )
 }

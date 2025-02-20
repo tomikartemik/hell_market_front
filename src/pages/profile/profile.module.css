@@ -4,4 +4,26 @@
     margin: 0 auto;
     height: 100%;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.layout {
+    height: 100%;
+    width: 100%;
+}
+
+.xouston {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ddd6d0;
+    z-index: 10;
+    padding: 8px;
+    gap: 4px;
+}
+
+.xouston a:visited, a:link, a:focus, a:active {
+    color: #ddd6d0;
 }
