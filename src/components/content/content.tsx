@@ -25,7 +25,7 @@ export const Content: FC<IProps> = ({hideFeed, data, isLoading}) => {
                     <div
                         className={styles.content}
                         style={{
-                            maxHeight: hideFeed ? 'calc(100vh - 200px)' : 'calc(100vh - 150px)'
+                            maxHeight: hideFeed ? 'calc(100vh - 230px)' : 'calc(100vh - 160px)'
                         }}
                     >
                         {data.map(item => (
