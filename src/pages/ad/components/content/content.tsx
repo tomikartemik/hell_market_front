@@ -10,7 +10,7 @@ export const AdContent: FC<IProps> = ({description}) => {
         <div className={styles.root}>
             <p className={styles.heading}>Description</p>
             <div className={styles.descriptionContainer}>
-                <p className={styles.description}>{description}</p>
+                <p className={styles.description}>{description.replace(/\\n/g, '\n')}</p>
             </div>
         </div>
     )
