@@ -42,9 +42,6 @@ export const AdPage = () => {
                 <p className={styles.price}>{data.data.price} $</p>
                 {!isUserAd && <Button onClick={() => onOpen(+(id ?? 0))}>Buy</Button>}
             </div>
-            <div className={styles.xouston}>
-                Created by <a href={'https://xouston.com'} target={'_blank'}>Xouston</a>
-            </div>
         </div>
     )
 }

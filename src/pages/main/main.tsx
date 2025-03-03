@@ -37,9 +37,6 @@ export const MainPage = () => {
                 <Navbar categories={categories} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}/>
                 <Content data={data?.data} isLoading={isLoading}/>
             </div>
-            <div className={styles.xouston}>
-                Created by <a href={'https://xouston.com'} target={'_blank'}>Xouston</a>
-            </div>
         </div>
     )
 }
